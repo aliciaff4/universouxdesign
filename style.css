@@ -1,0 +1,125 @@
+*{
+     margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(151, 151, 77);
+}
+
+nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: rgba(219, 172, 102, 0.863); 
+    padding: 20px 0;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: rgb(214, 212, 212);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover{
+    color: rgb(171, 209, 128);
+}
+
+section:not(#home){
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#home{
+    /* background-color: #e2a04a; */
+    background-image: url(https://super.abril.com.br/wp-content/uploads/2022/10/house-of-the-dragon-guia-dragoes-syrax.jpg?quality=70&strip=info&w=1024);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aquamarine;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content.img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.content.text{
+    max-width: 600px;
+    text-align: left;
+}
+
+.content.text h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+.content.text p{
+    font-size: 1.1em;
+    color: rgb(8, 158, 158);
+}
+
+#praia{
+    background-color: rgb(156, 110, 94);
+}
+
+#lua{
+    background-color: rgb(64, 59, 94);
+}
+
+#pordosol{
+    background-color: rgb(119, 55, 55);
+}
+
+.cta-button{
+    margin-top: 30px;
+    background-color: rgb(202, 191, 85);
+    color: rgb(22, 80, 131);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgb(207, 198, 198);
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+.cta-button:hover{
+    box-shadow: 0px 1px 3px rgb(252, 173, 3);
+}
